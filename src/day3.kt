@@ -4,7 +4,7 @@ val input = arrayOf("R998,U367,R735,U926,R23,U457,R262,D473,L353,U242,L930,U895,
 
 fun main() {
     val path1 = input[0].toPath()
-    val path2 = input[0].toPath()
+    val path2 = input[1].toPath()
 
     val result = path1.combinationsWith(path2)
             .mapNotNull { (s1, s2) -> s1.intersectionWith(s2)?.getManhattan() }
